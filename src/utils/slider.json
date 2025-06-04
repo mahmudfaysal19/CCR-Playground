@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Cricket Bat both for long & Short Pitch",
+    "price": "50",
+    "detail": "Ton,RAF, Macbolts.",
+    "image": "./A_Modern_Cricket_Bat.jpg"
+  },
+  {
+    "name": "Tennis Balls, Tap Included",
+    "price": "200",
+    "detail": "Deus Ball, Boom Ball",
+    "image": "./ttn.jpg"
+  },
+  {
+    "name": "Wicket-keeper & Batsman Gloves",
+    "price": "60",
+    "detail": "Both Soft and heavey weighted gloves.",
+    "image": "./gloves2.jpg"
+  },
+  {
+    "name": "Cricket Stumps without Led",
+    "price": "150",
+    "detail": "Both single and Multiple Stumps  available.",
+    "image": "./stumps.jpg"
+  },
+  {
+    "name": "Thai and hand Pads",
+    "price": "100",
+    "detail": "Duel pads for running",
+    "image": "./pads.jpg"
+  },
+  {
+    "name": "FootBall",
+    "price": "100",
+    "detail": "10x8 cm football",
+    "image": "./foot.jpg"
+  }
+]
