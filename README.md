@@ -1,69 +1,76 @@
-```
-   ______ ______ ____     ____   __                                                __
-  / ____// ____// __ \   / __ \ / /____ _ __  __ ____ _ _____ ____  __  __ ____   / /
- / /    / /    / /_/ /  / /_/ // // __ `// / / // __ `// ___// __ \/ / / // __ \ / / 
-/ /___ / /___ / _, _/  / ____// // /_/ // /_/ // /_/ // /   / /_/ // /_/ // / / //_/  
-\____/ \____//_/ |_|  /_/    /_/ \__,_/ \__, / \__, //_/    \____/ \__,_//_/ /_/(_)   
-                                       /____/ /____/                                  
-```
+# CCR-Playground
 
-> **CCR Playground** · An isolated experimentation environment and benchmarking testbed for rapid prototyping, algorithmic verification, and pipeline evaluation.
+> An experimental sandbox and benchmarking environment for rapid prototyping, algorithmic testing, and pipeline evaluation.
+
+[![Python](https://img.shields.io/badge/Language-Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![C++](https://img.shields.io/badge/Language-C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)](https://isocpp.org/)
+[![License](https://img.shields.io/badge/License-MIT-purple?style=flat-square)](LICENSE)
 
 ---
 
-### `// 01. SPECIFICATION MATRIX`
+## Overview
 
-| Parameter | Configuration |
+**CCR-Playground** is an isolated testbed designed for experimenting with algorithms, evaluating processing pipelines, and running performance benchmarks without altering production codebases.
+
+### Key Capabilities
+* **Isolated Experimentation:** Test scripts run independently with zero configuration spillover.
+* **Performance Benchmarking:** Measure runtime latency, memory usage, and throughput across test routines.
+* **Deterministic Runs:** Versioned logs and fixed seeds to guarantee reproducible evaluations.
+* **Modular Structure:** Clear boundary between test datasets, execution scripts, and generated outputs.
+
+---
+
+## Tech Stack
+
+| Domain | Technologies |
 | :--- | :--- |
-| **Type** | Algorithm Sandbox / Experimental Workspace |
-| **Primary Stack** | Python · C++ · Shell Scripts |
-| **Core Objective** | Benchmark execution times, isolate edge cases, and validate pipeline logic |
-| **Status** | `[ACTIVE-PROTOTYPE]` |
+| **Languages** | Python, C++, Shell |
+| **Evaluation & Data** | NumPy, PyTorch / OpenCV (as needed) |
+| **Environment & Tools** | Virtualenv, Git, VS Code |
 
 ---
 
-### `// 02. SANDBOX ARCHITECTURE`
+## Project Structure
 
 ```text
-ccr-playground/
- ├── experiments/       # Isolated test scripts and mathematical evaluations
- ├── benchmarks/        # Performance, latency, and memory profiling runs
- ├── datasets/          # Local sample inputs, ground truth, and test fixtures
- ├── outputs/           # Generated metrics, logs, and visual comparison assets
- ├── scripts/           # Automation triggers and environment helpers
- └── requirements.txt   # Runtime dependencies
+CCR-Playground/
+├── experiments/       # Independent test scripts and prototype logic
+├── benchmarks/        # Latency and throughput evaluation routines
+├── datasets/          # Sample inputs, edge cases, and test fixtures
+├── outputs/           # Benchmark logs, execution traces, and artifacts
+├── requirements.txt   # Python package dependencies
+├── .gitignore
+└── README.md
 ```
 
 ---
 
-### `// 03. EXECUTION FLOW`
+## Quickstart
 
+### 1. Clone the repository
 ```bash
-# 1. Clone workspace
 git clone [https://github.com/mahmudfaysal19/CCR-Playground.git](https://github.com/mahmudfaysal19/CCR-Playground.git)
 cd CCR-Playground
+```
 
-# 2. Initialize virtual environment
+### 2. Set up virtual environment
+```bash
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+```
 
-# 3. Install core dependencies
+### 3. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
-# 4. Trigger default benchmark routine
-python run_experiment.py --mode=benchmark --verbose
+### 4. Run an experiment
+```bash
+python run_experiment.py
 ```
 
 ---
 
-### `// 04. DESIGN PRINCIPLES`
+## License
 
-* **Zero-Coupling:** Each experiment executes independently without contaminating root configurations.
-* **Reproducible Runs:** Fixed seeds and versioned execution logs for deterministic metrics.
-* **Lightweight Footprint:** Clean separation between core execution logic and temporary generated artifacts.
-
----
-
-### `// 05. LICENSE`
-
-This playground is open-sourced under the **MIT License**.
+This project is licensed under the MIT License.
